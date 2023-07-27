@@ -1,0 +1,37 @@
+body{
+    background-color: #eee;
+}
+
+.card {
+    margin-top: 40px;
+    color: #fefefe !important;
+}
+
+.card-1 *{
+    color: #eaeaea !important;
+
+}
+
+.price {
+    color: #888;
+}
+
+.price h2{
+    text-align: center;
+}
+
+.price span {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+.card-1{
+    background: linear-gradient(to right, #8E2DE2 0%, #4A00E0 100%);
+}
+
+.list-group-item {
+    background-color: transparent;
+}
