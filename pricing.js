@@ -2,7 +2,7 @@ $(document).ready(function() {
     $.ajax({
 		url: "https://spicyvision.com/QuoteService/ListOfServices",
 		method: "GET",
-		dataType: "json",
+		dataType: "jsonp",
         headers: {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': true,
