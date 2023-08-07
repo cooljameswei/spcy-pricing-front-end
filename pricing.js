@@ -5,7 +5,8 @@ $(document).ready(function() {
 		dataType: "json",
         headers: {
             'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Credentials': true
+            'Access-Control-Allow-Credentials': true,
+            'Content-Type':'application/json'
         },
 		success: function (data) {
             console.log(data)
