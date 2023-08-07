@@ -1,0 +1,13 @@
+{
+    "CalculatedPrice": 4480,
+    "RequestId": 14,
+    "Message": "<p>Thank you for reaching out. I appreciate your interest in my services. </p> <p> As for the quote for your requested service, the base cost is $4,480. </p> <p>However, please note that there will be an additional travel cost for non-GTA locations. To provide you with more detailed information and to discuss the travel cost, I will connect over a phone call and I would be happy to arrange a meeting at your convenience.<p>I'd like to clarify that the quoted price includes the cost of multiple locations, taking into account the need for me to travel and set up my equipment 4 times, all of which will be done under tight time constraints and pressure.</p> <p>Rest assured, despite the challenges, I am fully committed to delivering a seamless and professional service at each location to meet your expectations effectively.</p>",
+    "WillAddAdditionalCost": true,
+    "BreakDown": {
+        "Set up fee": 100,
+        "Photo with edit (12 hours, 12 x 115)": 1380,
+        "Video with post production (12 hours, 12 x 225)": 2700,
+        "Physical delivery of USB Flash Drive, to house": 75,
+        "Location change: 3 x 75": 225
+    }
+}
