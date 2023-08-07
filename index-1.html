@@ -524,6 +524,38 @@
             console.log($(this).closest('.list-group-item').find('.sales-description'))
         })
 
+        function processResponse(response) {
+        console.log(response);
+        // Process the response data here
+        }
+
+        var script = document.createElement('script');
+        script.src = 'https://spicyvision.com/QuoteService/ListOfServices?callback=processResponse';
+
+        document.body.appendChild(script);
+        processResponse({1:23})
+        // function processResponse(response) {
+        //     alert(333)
+        // // Handle the response data here
+        // }
+
+        $(document).ready(function() {
+            $.ajax({
+                url: "https://spicyvision.com/QuoteService/ListOfServices",
+                dataType: "json",
+                // jsonpCallback: 'processResponse',
+                error: function(xhr, status, error) {
+                    console.log(xhr, status, error);
+                },
+                success: function(json) {
+                    alert("success");
+                    // processResponse(json)
+
+                }
+            })
+        })
+
+        
         
     </script>
     <script src="./pricing.js"></script>
