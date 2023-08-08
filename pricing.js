@@ -60,7 +60,6 @@ $('#generate-quote-form').submit(function(e) {
         const endTime = `${$(this).find('.EndTime').val()}:00`
         let locations = []
         $(this).find('.locations .location').each((l, location) => {
-            console.log(l, location)
             let Address = $(location).find('.Address').val()
             let IsGta = $(location).find('.IsGta').prop('checked')
             locations.push({Address, IsGta})
@@ -70,7 +69,6 @@ $('#generate-quote-form').submit(function(e) {
     }, [])
     let ServiceIds = []
     $('.service').each((idx, s) => {
-        console.log($(s))
         if($(s).prop('checked'))
             ServiceIds.push(Number($(s).val()))
     })
@@ -92,8 +90,29 @@ $('#generate-quote-form').submit(function(e) {
         contentType: "application/json",
 
 		success: function (data) {
+            const { CalculatedPrice, Message, BreakDown, WillAddAdditionalCost } = data
+            $('#result').html(`
+            <div class="alert alert-success" role="alert">
+                ${Message}
+                <hr>
+                <div>
+                    <p><h4 class="alert-heading">CalculatedPrice: $${CalculatedPrice}</h4></p>
+                    <ul>
+                        ${
+                            Object.keys(BreakDown).reduce((t,v) => 
+                                `${t}<li>
+                                    <div class="d-flex justify-content-between">
+                                        <div>${v}</div>
+                                        <div>$${BreakDown[v]}</div>
+                                    </div>
+                                </li>`
+                            , "")
+                        }
+                    </ul>
+                </div>
+            </div>
+            `)
             
-            console.log(data)
 		},
 		error: function (xhr, status, error) {
 		  console.log(xhr.responseText);

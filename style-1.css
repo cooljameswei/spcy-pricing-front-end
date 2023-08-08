@@ -176,3 +176,13 @@ header{
     padding-top: 20px;
     padding-bottom: 0
 }
+
+#result .alert {
+    width:75%;
+}
+
+@media(max-width: 1192px) {
+    #result .alert {
+        width:100%;
+    }
+}
