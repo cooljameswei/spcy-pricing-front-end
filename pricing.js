@@ -8,7 +8,7 @@ $('.btn-request-quote').click(function() {
 
 $('#generate-quote-form').submit(function(e) {
     e.preventDefault()
-    const data = {
+    const data1 = {
         "Name": "Micha uss",
         "Email": "esdds@!dfasdf.ca",
         "PhoneNumber": "234 333 2222",
@@ -51,7 +51,39 @@ $('#generate-quote-form').submit(function(e) {
             }
         ]
     };
-    console.log(data)
+    
+
+    let EventDetails = []
+    $('.item').each((t, v) => {
+        const date = `${$(this).find('.Date').val()}T00:00:00`
+        const startTime = `${$(this).find('.StartTime').val()}:00`
+        const endTime = `${$(this).find('.EndTime').val()}:00`
+        let locations = []
+        $(this).find('.locations .location').each((l, location) => {
+            console.log(l, location)
+            let Address = $(location).find('.Address').val()
+            let IsGta = $(location).find('.IsGta').prop('checked')
+            locations.push({Address, IsGta})
+        })
+        EventDetails.push({date, startTime, endTime, locations})
+
+    }, [])
+    let ServiceIds = []
+    $('.service').each((idx, s) => {
+        console.log($(s))
+        if($(s).prop('checked'))
+            ServiceIds.push(Number($(s).val()))
+    })
+
+    const data = {
+        "Name": $('#Name').val(),
+        "Email": $('#Email').val(),
+        "PhoneNumber": $('#PhoneNumber').val(),
+        "AdditionalDetails": $('#AdditionalDetails').val(),
+        EventDetails,
+        ServiceIds
+    }
+    
     $.ajax({
 		url: "https://spicyvision.com/QuoteService/QuoteRequest",
 		method: "POST",
@@ -60,8 +92,8 @@ $('#generate-quote-form').submit(function(e) {
         contentType: "application/json",
 
 		success: function (data) {
-		  console.log(data);
-		  roll(data.winner); // call the roll function with the winner data
+            
+            console.log(data)
 		},
 		error: function (xhr, status, error) {
 		  console.log(xhr.responseText);
