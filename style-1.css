@@ -30,9 +30,18 @@ ul {
 
 .card-1{
     background: linear-gradient(to right, #8E2DE2 0%, #4A00E0 100%);
+    position: relative;
 }
 
-
+.bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+    /* visibility: hidden; */
+}
 
 .list-group-item {
     background-color: transparent;
@@ -81,10 +90,85 @@ ul {
     .card-title h6{
         font-size: 14px;
     }
+    .show-more {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media(max-width: 768px){
     .card-title h6 {
         max-width: 70%;
     }
+}
+
+.form-check-input {
+    display: none;
+}
+
+html,
+body{
+    height: 100%;
+}
+header{
+    height: 50%;
+}
+.jarallax {
+    height: 100%;
+}
+
+.view .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+#generate-quote-form {
+    display: none;
+    padding-top: 60px;
+    border-top: 1px solid #aaa;
+}
+
+
+.card-ribbon::before {
+    border-right-color: #005580;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 7px;
+    right: 100%;
+    border-right: 10px solid #646464;
+    border-top: 16px solid transparent;
+}
+
+.card-ribbon {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin: -16px 0 0;
+    padding: 10px 20px 6px;
+    color: #fff;
+    font-size: 20.8px;
+    line-height: 23px;
+    z-index: 101;
+    background-color: #0088cc;
+    font-family: var(--porto-alt-ff,var(--porto-body-ff)),sans-serif;
+}
+
+.card-body {
+    padding-top: 20px;
+    padding-bottom: 0
 }
