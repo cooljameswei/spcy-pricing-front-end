@@ -1,4 +1,4 @@
-{
+[{
     "Name": "Micha uss",
     "Email": "esdds@!dfasdf.ca",
     "PhoneNumber": "234 333 2222",
@@ -40,4 +40,4 @@
             ]
         }
     ]
-}
+}]
