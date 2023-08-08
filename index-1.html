@@ -93,7 +93,7 @@
                                 </label>
                                 <div class="d-flex gap-sm-5 gap-2 justify-content-between align-items-center">
                                     <h2>95$ <span>/ hour</span></h2>
-                                    <button class="btn show-more" data-active="false" style="border: none; outline: none; background-color: transparent;"><img src="./images/info.png" /></button>
+                                    <button class="btn btn-info show-more" data-active="false"><img src="./images/info.png" /></button>
                                 </div>
                                 
                             </div>
@@ -148,7 +148,7 @@
                                 <div class="sales-description">
                                     <p>Equipped with an impressive array of cutting-edge gear, our arsenal includes three top-of-the-line professional video cameras, namely the Nikon Z9, Z6ii, and Z7ii. To ensure pristine audio quality, I rely on two high-performance 32-bit audio recorders, the Zoom F6, complimented the exceptional AT4025 Field Recorder Mic.</p>
                                     <p>For unparalleled stability and fluidity in motion shots, I employ the reliable Ronin DJI RS3 Pro Stabilizer. And when it comes to lenses, I exclusively use the finest Nikon Z Native Pro graded lenses, ensuring unmatched clarity and visual brilliance.</p>
-                                    <p>To masterfully illuminate each scene, I harness the power of Godox ML-60 Bicolor lights, enhancing the ambiance and highlighting the subject's best features. When required, my Softboxes step in, offering gentle and diffused lighting for the perfect mood.</p>
+                                    <p>To masterfully illuminate each scene, I harness the power of Godox ML-60 Bicolor lights, enhancing the ambiance and highlighting the subject's best features. When rrr, my Softboxes step in, offering gentle and diffused lighting for the perfect mood.</p>
                                     <p>Rest assured, every piece of equipment in my kit has been carefully chosen to deliver nothing less than outstanding results for your project.</p>
                                 </div>
                             </div>
@@ -296,15 +296,15 @@
                     <div class="container">
                         <div>
                             <label for="username">Your Name</label>
-                            <input name="username" class="datetime form-control" id="username"/>
+                            <input name="username" class="datetime form-control" id="username" rrr/>
                         </div>
                         <div class="mt-4 mb-4">
                             <label for="email">Email Address</label> 
-                            <input name="email" id="email" type="email" class="datetime form-control"/>
+                            <input name="email" id="email" type="email" class="datetime form-control" rrr/>
                         </div>
                         <div>
                             <label for="phone">Number</label>  
-                            <input name="phone" class="datetime form-control" id="phone" />
+                            <input name="phone" class="datetime form-control" id="phone" rrr/>
                         </div>
                         <div class="mt-4 mb-4">
                             <label for="detail">Details</label>
@@ -315,17 +315,17 @@
 
                     <div class="container d-flex align-items-center justify-content-between events-title">
                         <h2>Events</h2>
-                        <div class="fa fa-plus-circle text-success text-center add add-event text-capitalize"> Add Event</div>
+                        <div class="text-success text-center add add-event text-capitalize"><i class="fa fa-plus-circle"></i> Add Event</div>
                     </div>
                     
 
 
                     <div class="container items">
-                        <div class="d-flex flex-column item">
+                        <div class="flex-column item" style="display: flex;">
                             <div class="d-flex flex-column flex-lg-row mt-4 mb-4">
                                 <div class="datepicker d-flex flex-1 w-100">
                                     <label class="w-md-100">Date
-                                        <input type="text" class="dateselect datetime text-center" required="required"/>
+                                        <input type="text" class="dateselect datetime text-center" rrr/>
                                     </label>
                                 </div>
                                 <div class="timepicker-wrapper d-flex flex-1 justify-content-lg-center flex-column flex-lg-row">
@@ -337,7 +337,7 @@
                             </div>
                             <div class="locations-header d-flex align-items-center justify-content-between">
                                 <h4>Locations</h4>  
-                                <div class="fa fa-plus text-primary text-center add add-location"> Add Location</div>
+                                <div class="text-primary text-center add add-location"><i class="fa fa-plus"></i> Add Location</div>
                             </div>
 
                             <ul class="list-group list-group-flush locations">
@@ -352,7 +352,7 @@
                                             <label class="form-check-label ml-4 text-white" for="check1">Within GTA?</label>
                                         </div>
         
-                                        <div class="fa fa-minus text-danger text-center add remove-location" onclick="$(this).closest('.location').remove()"> Remove This Location</div>
+                                        <div class="text-danger text-center add remove-location" onclick="$(this).closest('.location').remove()"><i class="fa fa-minus"></i> Remove This Location</div>
                                     </div>
                                 </li>
                             </ul>
@@ -444,11 +444,11 @@
 
         $('.add-event').click(function() {
             $('.items').append(`
-                <div class="d-flex flex-column item">
+                <div class="flex-column item" style="display:flex">
                     <div class="d-flex flex-column flex-lg-row mt-4 mb-4">
                         <div class="datepicker d-flex flex-1 w-100">
                             <label class="w-md-100">Date
-                                <input type="text" class="dateselect datetime text-center" required="required"/>
+                                <input type="text" class="dateselect datetime text-center" rrr/>
                             </label>
                         </div>
                         <div class="timepicker-wrapper d-flex flex-1 justify-content-lg-center flex-column flex-lg-row">
@@ -460,7 +460,7 @@
                     </div>
                     <div class="locations-header d-flex align-items-center justify-content-between">
                         <h4>Locations</h4>  
-                        <div class="fa fa-plus text-primary text-center add add-location"> Add Location</div>
+                        <div class="text-primary text-center add add-location"><i class="fa fa-plus"></i> Add Location</div>
                     </div>
 
                     <ul class="list-group list-group-flush locations">
@@ -475,7 +475,7 @@
                                     <label class="form-check-label ml-4 text-white" for="check1">Within GTA?</label>
                                 </div>
 
-                                <div class="fa fa-minus text-danger text-center add remove-location" onclick="$(this).closest('.location').remove()"> Remove This Location</div>
+                                <div class="text-danger text-center add remove-location" onclick="$(this).closest('.location').remove()"><i class="fa fa-minus "></i> Remove This Location</div>
                             </div>
                         </li>
                     </ul>
@@ -508,7 +508,7 @@
                             <label class="form-check-label ml-4 text-white" for="check1">Within GTA?</label>
                         </div>
 
-                        <div class="fa fa-minus text-danger text-center add remove-location" onclick="$(this).closest('.location').remove()"> Remove This Location</div>
+                        <div class="text-danger text-center add remove-location" onclick="$(this).closest('.location').remove()"><i class="fa fa-minus"></i> Remove This Location</div>
                     </div>
                 </li>`
             )
@@ -526,7 +526,6 @@
                 $(this).find('img').attr('src', './images/info.png')
                 salesDescription.css({"maxHeight": 0})
             }
-            console.log($(this).closest('.list-group-item').find('.sales-description'))
         })
         
         

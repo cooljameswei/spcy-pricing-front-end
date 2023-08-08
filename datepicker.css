@@ -4,9 +4,10 @@
     font-size: 20px;
     cursor: pointer;
 }
-.card {
+.card-2 {
     background-color: #424242;
-    padding-top: 10px
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .events-title {
