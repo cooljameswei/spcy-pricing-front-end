@@ -8,50 +8,6 @@ $('.btn-request-quote').click(function() {
 
 $('#generate-quote-form').submit(function(e) {
     e.preventDefault()
-    const data1 = {
-        "Name": "Micha uss",
-        "Email": "esdds@!dfasdf.ca",
-        "PhoneNumber": "234 333 2222",
-        "AdditionalDetails": "This will be a wedding event",
-        "ServiceIds": [
-            1,
-            3,
-            9
-        ],
-        "EventDetails": [
-            {
-                "Date": "2023-11-12T00:00:00",
-                "StartTime": "12:30:00",
-                "EndTime": "19:00:00",
-                "Locations": [
-                    {
-                        "Address": "23 Ranking ave, toronto",
-                        "IsGta": true
-                    },
-                    {
-                        "Address": "7 Windosor Ave",
-                        "IsGta": false
-                    }
-                ]
-            },
-            {
-                "Date": "2023-11-15T00:00:00",
-                "StartTime": "11:30:00",
-                "EndTime": "17:00:00",
-                "Locations": [
-                    {
-                        "Address": "23 SAttle down, toronto",
-                        "IsGta": true
-                    },
-                    {
-                        "Address": "7 Peelie Ave",
-                        "IsGta": false
-                    }
-                ]
-            }
-        ]
-    };
-    
 
     let EventDetails = []
     $('.item').each((t, v) => {
@@ -118,4 +74,12 @@ $('#generate-quote-form').submit(function(e) {
 		  console.log(xhr.responseText);
 		},
 	});
+})
+
+$('.card-1 .form-check-input').click(function() {
+    const groupName = $(this).data('group')
+    if(groupName) {
+        $(`.card-1 input[data-group=${groupName}]`).prop('checked',false)
+        $(this).prop('checked', true)
+    }
 })

@@ -186,3 +186,7 @@ header{
         width:100%;
     }
 }
+
+.intro-subtext {
+    line-height: 1.5;
+}

@@ -157,7 +157,13 @@ button:focus {
 .datepicker-dropdown.datepicker-orient-top:before {
     border-top: 7px solid rgba(0,0,0,.1);
 }
+@media(max-width: 768px) {
 
+    .add {
+        font-size: 16px;
+    }
+
+}
 @media(max-width: 992px) {
     .datepicker label{
         width: 100%;
