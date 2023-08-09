@@ -1,0 +1,216 @@
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  min-height: 60px
+}
+
+.tab-container img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+.tab-thumbnails {
+  list-style: none;
+  font-size: 0;
+  margin-left: -2%;
+  margin-bottom: 0;
+  text-align: center;
+  padding-inline-start: 0;
+  background-color: #e8e8e8;
+  display: flex;
+}
+
+  .tab-thumbnails li {
+      display: inline-block;
+      /* margin-left: 1%;
+margin-right: 1%; */
+      text-align: center;
+      vertical-align: middle;
+      width: 40%;
+      flex: 1
+  }
+
+  .new-line {
+    display: none;
+  }
+@media (max-width: 400px) {
+  .tab-thumbnails .title {
+    /*  font-size: 16px !important; */
+
+  }
+
+  .new-line {
+    display: block;
+  }
+  
+  .title-overview{
+    padding-left: 4px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tab-thumbnails li {
+      width: 18%
+  }
+
+  .thumb-image {
+      height: 75px !important;
+  }
+
+  .tab-thumbnails :first-child {
+      margin-left: 0 !important;
+  }
+
+  .tab-thumbnails :last-child {
+      margin-right: 0 !important;
+  }
+
+  .tab-thumbnails input[type="radio"]:not(:checked) + .item-hugger {
+      margin-top: 24px !important;
+      margin-bottom: 10px !important; /* Change this to adjust tab */
+      height: 120px !important; /* Change this to adjust tab */
+  }
+
+  .tab-thumbnails input[type="radio"]:not(:checked) + .item-hugger .thumb-image {
+      padding: 16px 0;
+  }
+
+  .tab-thumbnails input[type="radio"]:checked + .item-hugger .thumb-image {
+      height: 100px !important;
+      width: 90%;
+  }
+
+  .tab-thumbnails input[type="radio"]:checked + .item-hugger .title {
+      font-weight: 700;
+  }
+
+  .tab-thumbnails input[type="radio"]:checked + .item-hugger {
+      height: 120px !important; /* Change this height to control the tab */
+  }
+}
+
+@media (min-width: 576px) {
+  .tab-thumbnails li {
+      width: 18%
+  }
+
+  .h2-responsive {
+      font-size: 140%;
+  }
+
+  .title {
+      font-size: 15px !important;
+  }
+
+  .thumb-image {
+      height: 80px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .h2-responsive {
+      font-size: 170%;
+  }
+
+  .thumb-image {
+      height: 100px !important;
+  }
+
+  .music-video-text {
+      width: 117% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .tab-thumbnails li {
+      width: 15%
+  }
+
+  .title {
+      font-size: 20px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h2-responsive {
+      font-size: 200%;
+  }
+}
+
+.tab-thumbnails li:hover .item-hugger {
+  background: white;
+}
+
+  .tab-thumbnails li:hover .item-hugger .title {
+      color: #000;
+  }
+
+.tab-thumbnails input[type="radio"] {
+  display: none;
+}
+
+.tab-thumbnails .item-hugger {
+  position: relative;
+  height: 140px;
+  margin: 20px 0;
+  background: #f2f2f2;
+  transition: all 150ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-thumbnails label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.tab-thumbnails .title {
+  padding: 20px 0 0;
+  font-size: 12px;
+  color: #555;
+  transition: all 150ms linear;
+  flex: 1;
+  line-height: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-thumbnails .thumb-image {
+  height: 100px;
+  padding: 20px 0;
+  transition: all 150ms linear;
+  flex: 1;
+}
+
+.tab-thumbnails input[type="radio"]:checked + .item-hugger {
+  height: 180px;
+  margin: 0;
+  background: white;
+}
+
+.tab-thumbnails input[type="radio"]:checked ~ li {
+  flex: 1.2
+}
+
+.tab-thumbnails input[type="radio"]:checked ~ .content {
+  opacity: 1;
+}
