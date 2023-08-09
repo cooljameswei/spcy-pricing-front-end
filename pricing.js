@@ -79,9 +79,10 @@ $('#generate-quote-form').submit(function(e) {
 $('.card-1 .form-check-input').click(function() {
     const groupName = $(this).data('group')
     const isChecked = $(this).prop('checked')
+    console.log(isChecked)
     if(groupName) {
         $(`.card-1 input[data-group=${groupName}]`).prop('checked',false)
-        if(!isChecked)
+        if(isChecked)
         $(this).prop('checked', true)
     }
 })
