@@ -52,7 +52,7 @@ $('#generate-quote-form').submit(function(e) {
                 ${Message}
                 <hr>
                 <div>
-                    <p><h4 class="alert-heading">CalculatedPrice: $${CalculatedPrice}</h4></p>
+                    <p><h4 class="alert-heading">Calculated Price: $${CalculatedPrice}</h4></p>
                     <ul>
                         ${
                             Object.keys(BreakDown).reduce((t,v) => 
@@ -66,8 +66,27 @@ $('#generate-quote-form').submit(function(e) {
                         }
                     </ul>
                 </div>
+                <hr>
+                <div class="text-center d-flex justify-content-around flex-sm-row flex-column gap-4">
+                    <span>Are you okay with this price and booking me?</span>
+                    <div class="text-center">
+                        <button class="btn btn-success">Yes</button>
+                        <button class="btn btn-light btn-no">No</button>
+                    </div>
+                </div>
+                <div class="negotiate-budget">
+                    <hr>
+                    <div class="form-group d-flex justify-content-between flex-sm-row flex-column">
+                        <label for="budget">Please let me know your budget</label>
+                        <input type="number" id="budget" class="form-control mt-2 mb-2 m-sm-0" style="max-width: 240px;"/>
+                    </div>
+                    
+                    <label class="mt-0 mt-sm-2">I can customize my service to meet your budget so please feel free to let me know best price you are willing to pay.</label>
+                    <div class="text-center mt-2"><button class="btn btn-primary">Submit</button></div>
+                </div>
             </div>
             `)
+            $('.services').fadeOut()
             
 		},
 		error: function (xhr, status, error) {
@@ -76,10 +95,16 @@ $('#generate-quote-form').submit(function(e) {
 	});
 })
 
+$(document).on('click', '.btn-no', function() {
+    let negotiateBudget = $('.negotiate-budget')
+    console.log(negotiateBudget)
+    negotiateBudget.css({maxHeight: 240})
+    $(this).prop('disabled', true)
+});
+
 $('.card-1 .form-check-input').click(function() {
     const groupName = $(this).data('group')
     const isChecked = $(this).prop('checked')
-    console.log(isChecked)
     if(groupName) {
         $(`.card-1 input[data-group=${groupName}]`).prop('checked',false)
         if(isChecked)

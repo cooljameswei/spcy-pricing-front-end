@@ -7,7 +7,6 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
     <link rel="stylesheet" href="./style-1.css">
     <link rel="stylesheet" href="./checkbox.css">
@@ -75,10 +74,11 @@
         </div>
     </header>
 
-    <div class="container mt-5 mb-5">
-        <div id="result" class="d-flex justify-content-center">
-            
-        </div>
+    <div id="result" class="container d-flex justify-content-center mt-5 mb-5">
+        
+    </div>
+
+    <div class="container mt-5 mb-5 services">
         <div class="card card-1">
             <div class="card-ribbon">
                 Photo
@@ -333,17 +333,17 @@
 
                     <div class="container items">
                         <div class="flex-column item" style="display: flex;">
-                            <div class="d-flex flex-column flex-lg-row mt-4 mb-4">
-                                <div class="datepicker d-flex flex-1 w-100">
-                                    <label class="w-md-100">Date
-                                        <input type="text" class="dateselect datetime text-center Date" required/>
-                                    </label>
+                            <div class="d-flex flex-column flex-lg-row mt-4 mb-4 justify-content-md-between">
+                                <div class="timepicker-wrapper d-flex flex-1 flex-column flex-lg-row align-items-lg-center">
+                                    <label class="w-md-100">Date</label> <input type="date" class="datetime text-center Date" required/>
                                 </div>
-                                <div class="timepicker-wrapper d-flex flex-1 justify-content-lg-center flex-column flex-lg-row">
-                                    <label class="ml-lg-1">From</label> <input class="datetime text-center text-center StartTime" type="time" name="from" required>
-                                </div>
-                                <div class="timepicker-wrapper d-flex flex-1 justify-content-lg-center flex-column flex-lg-row">
-                                    <label class="">To</label> <input class="ml-1 datetime text-center EndTime" type="time" name="to" required>
+                                <div class="d-flex flex-column flex-lg-row justify-content-between gap-lg-5">
+                                    <div class="timepicker-wrapper d-flex justify-content-lg-center flex-column flex-lg-row">
+                                        <label class="ml-lg-1">From</label> <input class="datetime text-center StartTime" type="time" name="from" required>
+                                    </div>
+                                    <div class="timepicker-wrapper d-flex justify-content-lg-center flex-column flex-lg-row">
+                                        <label class="">To</label> <input class="ml-1 datetime text-center EndTime" type="time" name="to" required>
+                                    </div>
                                 </div>
                             </div>
                             <div class="locations-header d-flex align-items-center justify-content-between">
@@ -442,31 +442,21 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
-        $(function(){
-            $('.dateselect').datepicker({
-                format: 'yyyy-mm-dd',
-                // startDate: '-3d'
-            });
-        });
-
-        
-
         $('.add-event').click(function() {
             $('.items').append(`
                 <div class="flex-column item" style="display:flex">
-                    <div class="d-flex flex-column flex-lg-row mt-4 mb-4">
-                        <div class="datepicker d-flex flex-1 w-100">
-                            <label class="w-md-100">Date
-                                <input type="text" class="dateselect datetime text-center" required/>
-                            </label>
+                    <div class="d-flex flex-column flex-lg-row mt-4 mb-4 justify-content-md-between">
+                        <div class="timepicker-wrapper d-flex flex-1 flex-column flex-lg-row align-items-lg-center">
+                            <label class="w-md-100">Date</label> <input type="date" class="datetime text-center Date" required/>
                         </div>
-                        <div class="timepicker-wrapper d-flex flex-1 justify-content-lg-center flex-column flex-lg-row">
-                            <label class="ml-lg-1">From</label> <input class="datetime text-center text-center" type="time" name="from" required>
-                        </div>
-                        <div class="timepicker-wrapper d-flex flex-1 justify-content-lg-center flex-column flex-lg-row">
-                            <label class="">To</label> <input class="ml-1 datetime text-center" type="time" name="to" required>
+                        <div class="d-flex flex-column flex-lg-row justify-content-between gap-lg-5">
+                            <div class="timepicker-wrapper d-flex justify-content-lg-center flex-column flex-lg-row">
+                                <label class="ml-lg-1">From</label> <input class="datetime text-center StartTime" type="time" name="from" required>
+                            </div>
+                            <div class="timepicker-wrapper d-flex justify-content-lg-center flex-column flex-lg-row">
+                                <label class="">To</label> <input class="ml-1 datetime text-center EndTime" type="time" name="to" required>
+                            </div>
                         </div>
                     </div>
                     <div class="locations-header d-flex align-items-center justify-content-between">
@@ -494,12 +484,6 @@
 
                 </div>
             `)
-
-            $('.dateselect').datepicker({
-                format: 'yyyy-mm-dd',
-                // startDate: '-3d'
-            });
-
         })
 
         $('.remove-event').click(function() {
