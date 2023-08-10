@@ -52,14 +52,14 @@ $('#generate-quote-form').submit(function(e) {
                 ${Message}
                 <hr>
                 <div>
-                    <p><h4 class="alert-heading">Calculated Price: $${CalculatedPrice}</h4></p>
+                    <p><h4 class="alert-heading">Calculated Price: $${CalculatedPrice.toFixed(2)}</h4></p>
                     <ul>
                         ${
                             Object.keys(BreakDown).reduce((t,v) => 
                                 `${t}<li>
                                     <div class="d-flex justify-content-between">
                                         <div>${v}</div>
-                                        <div>$${BreakDown[v]}</div>
+                                        <div>$${BreakDown[v].toFixed(2)}</div>
                                     </div>
                                 </li>`
                             , "")
