@@ -91,6 +91,7 @@ $('.btn-request-quote').click(function() {
 $('#generate-quote-form').submit(function(e) {
     e.preventDefault()
 
+    $('.loading-icon').css('display', 'inline-block')
     let EventDetails = []
     $('.item').each((t, v) => {
         const date = `${$(this).find('.Date').val()}T00:00:00`
