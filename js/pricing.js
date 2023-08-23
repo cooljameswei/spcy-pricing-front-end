@@ -150,8 +150,8 @@ $('#generate-quote-form').submit(function(e) {
                         }
                     </ul>
                 </div>
-                <hr>
-                <div class="text-center d-flex justify-content-around flex-sm-row flex-column gap-4">
+                <hr class="question-panel">
+                <div class="text-center justify-content-around flex-sm-row flex-column gap-4 question-panel" style="display:flex">
                     <span>Are you okay with this price and booking me?</span>
                     <div class="text-center">
                         <button class="btn btn-success btn-yes">Yes</button>
@@ -205,8 +205,8 @@ $(document).on('click', '.btn-yes', function() {
 
 $(document).on('click', '.btn-no', function() {
     let negotiateBudget = $('.negotiate-budget')
-    negotiateBudget.css({maxHeight: 240})
-    
+    negotiateBudget.css({maxHeight: 320})
+    $('.question-panel').hide()
     $(this).prop('disabled', true)
     
 });
