@@ -66,10 +66,24 @@ window.addEventListener('DOMContentLoaded', function() {
         margins: 6
     })
     .on("jg.complete", function () {
+        var galleryItems = [
+            {
+              src: "path/to/image.jpg",
+              thumb: "path/to/thumb.jpg"
+            },
+            {
+              src: "https://www.youtube.com/watch?v=VIDEO_ID",
+              thumb: "path/to/video_thumbnail.jpg",
+              youtube: true
+            }
+            // Add more gallery items as needed
+        ];
         // console.log('gallery-start', Date.now())
         window.lightGallery(
             this,
             {
+                dynamic: true,
+                dynamicEl: galleryItems,
                 autoplayFirstVideo: false,
                 pager: false,
                 galleryId: "nature",
