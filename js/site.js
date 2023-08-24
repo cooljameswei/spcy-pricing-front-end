@@ -68,12 +68,12 @@ window.addEventListener('DOMContentLoaded', function() {
     .on("jg.complete", function () {
         var galleryItems = [
             {
-              src: "path/to/image.jpg",
-              thumb: "path/to/thumb.jpg"
+              src: "../images/cover-lowres.jpg",
+              thumb: "../images/cover-lowres.jpg"
             },
             {
-              src: "https://www.youtube.com/watch?v=VIDEO_ID",
-              thumb: "path/to/video_thumbnail.jpg",
+              src: "https://www.youtube.com/@spicyvision",
+              thumb: "../images/cover-lowres.jpg",
               youtube: true
             }
             // Add more gallery items as needed
@@ -95,18 +95,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     showCloseIcon: true,
                     download: false,
                     rotate: true
-                },
-                youtubePlayerParams: {
-                    modestbranding: 1,
-                    showinfo: 0,
-                    rel: 0,
-                    controls: 0
-                },
-                vimeoPlayerParams: {
-                    byline : 0,
-                    portrait : 0,
-                    color : 'A90707'     
-                },
+                }
             });
         // console.log('gallery-end', Date.now())
 
