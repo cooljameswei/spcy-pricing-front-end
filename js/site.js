@@ -81,6 +81,17 @@ window.addEventListener('DOMContentLoaded', function() {
                     showCloseIcon: true,
                     download: false,
                     rotate: true
+                },
+                youtubePlayerParams: {
+                    modestbranding: 1,
+                    showinfo: 0,
+                    rel: 0,
+                    controls: 0
+                },
+                vimeoPlayerParams: {
+                    byline : 0,
+                    portrait : 0,
+                    color : 'A90707'     
                 }
             });
         // console.log('gallery-end', Date.now())
