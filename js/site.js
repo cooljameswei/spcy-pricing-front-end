@@ -66,25 +66,9 @@ window.addEventListener('DOMContentLoaded', function() {
         margins: 6
     })
     .on("jg.complete", function () {
-        var galleryItems = [
-            {
-              src: "../images/cover-lowres.jpg",
-              thumb: "../images/cover-lowres.jpg"
-            },
-            {
-              src: "https://www.youtube.com/@spicyvision",
-              thumb: "../images/cover-lowres.jpg",
-              youtube: true
-            }
-            // Add more gallery items as needed
-        ];
-        // console.log('gallery-start', Date.now())
         window.lightGallery(
             this,
             {
-                dynamic: true,
-                dynamicEl: galleryItems,
-                autoplayFirstVideo: false,
                 pager: false,
                 galleryId: "nature",
                 plugins: [lgZoom, lgThumbnail],
