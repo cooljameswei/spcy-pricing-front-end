@@ -93,7 +93,6 @@ window.addEventListener('DOMContentLoaded', function() {
                     portrait : 0,
                     color : 'A90707'     
                 },
-                plugins: [lgVideo],
             });
         // console.log('gallery-end', Date.now())
 
