@@ -84,8 +84,8 @@ $('.btn-request-quote').click(function() {
     $(this).fadeOut()
     $('#generate-quote-form').fadeIn()
     $('.bullet-point').hide()
+    $('.form-check-input[disabled="disabled"]').closest('li').removeClass('d-flex').addClass('d-none');
     $('.form-check-input').fadeIn()
-
 })
 
 $('#generate-quote-form').submit(function(e) {
