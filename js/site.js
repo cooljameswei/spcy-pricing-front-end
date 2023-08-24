@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', function() {
             {
                 pager: false,
                 galleryId: "nature",
-                plugins: [lgZoom, lgThumbnail],
+                plugins: [lgZoom, lgThumbnail, lgVideo],
                 licenseKey: '08D8C119-0098-4FDC-94A8-58BE235087BC',
                 download: false,
                 mobileSettings: {
