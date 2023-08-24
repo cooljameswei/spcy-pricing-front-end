@@ -92,7 +92,8 @@ window.addEventListener('DOMContentLoaded', function() {
                     byline : 0,
                     portrait : 0,
                     color : 'A90707'     
-                }
+                },
+                plugins: [lgVideo],
             });
         // console.log('gallery-end', Date.now())
 
