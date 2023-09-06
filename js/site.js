@@ -1,3 +1,5 @@
+let visitTab = 0
+
 function openTabPage(n, t) {
     $('#bottom-portfolio').hide()
     $('#gallery-loading').show()
@@ -6,16 +8,16 @@ function openTabPage(n, t) {
 
     for (r = document.getElementsByClassName("tablinks"), i = 0; i < r.length; i++)
         r[i].className = r[i].className.replace(" active", "");
-    
     $('#gallery-loading').fadeOut(800, function() {
         $(`#${t}`).fadeIn(100, function(){
             $('#bottom-portfolio').show()
             if(n.currentTarget)
             n.currentTarget.className += " active"
-
-            $('html, body').animate({
-                scrollTop: $('#portfolio').offset().top
-            }, 'slow');
+            if(visitTab) 
+                $('html, body').animate({
+                    scrollTop: $('#portfolio').offset().top - 30
+                }, 'slow');
+            visitTab++
         })
         
     })
