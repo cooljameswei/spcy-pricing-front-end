@@ -35,14 +35,12 @@ $('.add-event').click(function() {
                     </div>
                 </li>
             </ul>
-            <button class="btn btn-danger remove-event" type="button" onclick="$(this).closest('.item').fadeOut()"><i class="fa fa-minus"></i> Remove This Event</button>
+            <button class="btn btn-danger remove-event" type="button"><i class="fa fa-minus"></i> Remove This Event</button>
 
         </div>
     `)
-})
-
-$('.remove-event').click(function() {
-    $(this).closest('.item').fadeOut()
+    if($('.item').length > 1)
+        $('.remove-event').show()
 })
 
 $(document).on('click', '.add-location', function() {
@@ -64,13 +62,21 @@ $(document).on('click', '.add-location', function() {
     )
 });
 
+$(document).on('click', '.remove-event', function() {
+    const item = $(this).closest('.item')
+    item.fadeOut()
+    item.remove()
+
+    if($('.item').length == 1)
+        $('.remove-event').hide()
+})
 $('.show-more').click(function() {
     let active = !$(this).data('active')
     $(this).data('active', active)
     let salesDescription = $(this).closest('.list-group-item').find('.sales-description')
     if(active){
         $(this).find('img').attr('src', './images/info-active.png')
-        salesDescription.css({"maxHeight": "400px"})
+        salesDescription.css({"maxHeight": "800px"})
     }
     else{
         $(this).find('img').attr('src', './images/info.png')
@@ -150,8 +156,8 @@ $('#generate-quote-form').submit(function(e) {
                         }
                     </ul>
                 </div>
-                <hr class="question-panel">
-                <div class="text-center justify-content-around flex-sm-row flex-column gap-4 question-panel" style="display:flex">
+               <hr class="question-panel">
+               <div class="text-center justify-content-around flex-sm-row flex-column gap-4 question-panel" style="display:flex">
                     <span>Are you okay with this price and booking me?</span>
                     <div class="text-center">
                         <button class="btn btn-success btn-yes">Yes</button>
@@ -161,12 +167,12 @@ $('#generate-quote-form').submit(function(e) {
                 <div class="negotiate-budget">
                     <hr>
                     <form method="POST" id="form-negotiate">
-                        <div class="form-group d-flex justify-content-between flex-sm-row flex-column">
-                            <label for="budget">Please let me know your budget</label>
-                            <input type="number" id="budget" class="form-control mt-2 mb-2 m-sm-0" style="max-width: 240px;" required/>
+                     <label class="mt-0 mt-sm-2 font-weight-bold">Oh! Ok, I can customize my service to meet your budget so please feel free to let me know best price you are willing to pay.</label>   
+                    <div class="my-3 form-group d-flex align-items-center">
+                            <label class="m-3" for="budget">Your budget:</label>
+                            <input type="number" id="budget" class="form-control ml-3 mt-2 mb-2 m-sm-0" style="max-width: 140px;max-height:40px;" required/> $
                         </div>
                         
-                        <label class="mt-0 mt-sm-2">I can customize my service to meet your budget so please feel free to let me know best price you are willing to pay.</label>
                         <div class="text-center mt-2"><button type="submit" class="btn btn-primary btn-submit">Submit</button></div>
                     </form>
                 </div>
@@ -205,10 +211,9 @@ $(document).on('click', '.btn-yes', function() {
 
 $(document).on('click', '.btn-no', function() {
     let negotiateBudget = $('.negotiate-budget')
-    negotiateBudget.css({maxHeight: 320})
-    $('.question-panel').hide()
+    negotiateBudget.css({ maxHeight: 400 })
+    $('.question-panel').hide();
     $(this).prop('disabled', true)
-    
 });
 
 $(document).on('submit', '#form-negotiate', function(e) {

@@ -1,5 +1,3 @@
-let visitTab = 0
-
 function openTabPage(n, t) {
     $('#bottom-portfolio').hide()
     $('#gallery-loading').show()
@@ -14,11 +12,10 @@ function openTabPage(n, t) {
             $('#bottom-portfolio').show()
             if(n.currentTarget)
             n.currentTarget.className += " active"
-            if(visitTab) 
-                $('html, body').animate({
-                    scrollTop: $('#portfolio').offset().top - 30
-                }, 'slow');
-            visitTab++
+
+            $('html, body').animate({
+                scrollTop: $('#portfolio').offset().top
+            }, 'slow');
         })
         
     })
@@ -66,12 +63,14 @@ window.addEventListener('DOMContentLoaded', function() {
         margins: 6
     })
     .on("jg.complete", function () {
+        // console.log('gallery-start', Date.now())
         window.lightGallery(
             this,
             {
+                autoplayFirstVideo: false,
                 pager: false,
                 galleryId: "nature",
-                plugins: [lgZoom, lgThumbnail, lgVideo],
+                plugins: [lgZoom, lgThumbnail],
                 licenseKey: '08D8C119-0098-4FDC-94A8-58BE235087BC',
                 download: false,
                 mobileSettings: {

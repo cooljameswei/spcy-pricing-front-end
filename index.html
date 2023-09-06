@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,55 +40,76 @@
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-            <div class="container">
-                <a style="word-break:break-word" class="navbar-brand" href="#">SpicyVision Productions</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mx-auto dropdown-menu-scrollable">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/pricing" data-offset="90">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#about" data-offset="90">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#portfolio" data-offset="100">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#contact" data-offset="100">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- Social Icon  -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link text-white mx-2" title="Facebook Page" target="_blank"
-                               href="https://www.facebook.com/emran.spicyvision">
-                                <i class="fab fa-facebook-f light-green-text-2"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white mx-2" title="Instagram" target="_blank"
-                               href="https://www.instagram.com/emran.spicyvision">
-                                <i class="fab fa-instagram light-green-text-2"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-white mx-2" title="YouTube" target="_blank"
-                               href="https://www.youtube.com/@spicyvision">
-                                <i class="fa-brands fa-youtube light-green-text-2"></i>
-                            </a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+         <div class="container flex-lg-row flex-column align-items-start">
+             <a style="word-break:break-word" class="navbar-brand" href="/">SpicyVision Productions</a>
+             <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarTogglerDemo02">
+                
+                 <!-- Social Icon  -->
+                 <ul class="navbar-nav nav-flex-icons">
+                     <li class="nav-item">
+                         <a class="nav-link text-white mx-2" title="Facebook Page" target="_blank"
+                            href="https://www.facebook.com/emran.spicyvision">
+                             <i class="fab fa-facebook-f light-green-text-2"></i>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link text-white mx-2" title="Instagram" target="_blank"
+                            href="https://www.instagram.com/emran.spicyvision">
+                             <i class="fab fa-instagram light-green-text-2"></i>
+                         </a>
+                     </li>
+                     <li>
+                         <a class="nav-link text-white mx-2" title="YouTube" target="_blank"
+                            href="https://www.youtube.com/@spicyvision">
+                             <i class="fa-brands fa-youtube light-green-text-2"></i>
+                         </a>
+                         
+                     </li>
+                 </ul>
+             </div>
+           
+             <ul class="navbar-nav mx-auto dropdown-menu-scrollable  d-none d-lg-flex">
+                     <li class="nav-item">
+                         <a class="nav-link text-white" href="/pricing" data-offset="90">Pricing</a>
+                     </li>
+                 <li class="nav-item">
+                     <a class="nav-link text-white" href="#contact" data-offset="100">Contact</a>
+                 </li>
+             </ul>
+
+             <ul class="navbar-nav dropdown-menu-scrollable d-lg-none d-flex flex-row justify-content-between">
+                 <li class="nav-item">
+                     <a class="nav-link text-white" href="/pricing" data-offset="90">Pricing</a>
+                 </li>
+                 <li class="nav-item">
+                     <ul class="navbar-nav nav-flex-icons flex-row">
+                         <li class="nav-item">
+                             <a class="nav-link text-white mx-2" title="Facebook Page" target="_blank"
+                                 href="https://www.facebook.com/emran.spicyvision">
+                                 <i class="fab fa-facebook-f light-green-text-2"></i>
+                             </a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link text-white mx-2" title="Instagram" target="_blank"
+                                 href="https://www.instagram.com/emran.spicyvision">
+                                 <i class="fab fa-instagram light-green-text-2"></i>
+                             </a>
+                         </li>
+                         <li>
+                             <a class="nav-link text-white mx-2" title="YouTube" target="_blank"
+                                 href="https://www.youtube.com/@spicyvision">
+                                 <i class="fa-brands fa-youtube light-green-text-2"></i>
+                             </a>
+                             
+                         </li>
+                     </ul>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link text-white" href="#contact" data-offset="100">Contact</a>
+                 </li>
+             </ul>
+         </div>
+     </nav>
 
         <!-- Intro Section -->
         <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}'
@@ -101,27 +122,34 @@
                                 <h2 class="display-3 font-weight-bold pb-4 mb-2 wow fadeIn">Emran Hussain</h2>
                                 <h3 class="intro-subtext wow fadeIn" data-wow-delay="0.2s">Professional Videographer & Photographer</h3>
                             </div>
+                            
+    <div class="text-white text-center icons" style="margin-top:100px;">
+        <div class="row text-center fadeIn" data-wow-delay="0.4s">
+            <div class="row">
+                <div class="col-6 mb-1 mb-md-5">
+                    <i class="fas fa-ring text-cyan fa-3x mb-4"></i>
+                    <h4 class="font-weight-bold mb-4">Wedding</h4>
+                </div>
+                <div class="col-6 mb-1 mb-md-5">
+                    <i class="fas fa-birthday-cake text-cyan fa-3x mb-4"></i>
+                    <h4 class="font-weight-bold mb-4">Events</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-1 mb-md-5">
+                    <i class="fas fa-female text-cyan fa-3x mb-4"></i>
+                    <h4 class="font-weight-bold mb-4">Portraits</h4>
+                </div>
+                <div class="col-6 mb-1 mb-md-5">
+                    <img src="./icons/music_video_icon.svg" class="mb-3 text-cyan lozad" alt="Music Video" style="height:54px;margin-bottom: 20px !important">
+                    <h4 class="font-weight-bold mb-4 music-video-text">Music Video</h4>
+                </div>
+            </div>
+           
+           
+        </div>
+    </div>
 
-                            <div class="text-white text-center icons" style="margin-top:100px;">
-                                <div class="row text-center fadeIn" data-wow-delay="0.4s">
-                                    <div class="col-3 mb-1 mb-md-5">
-                                        <i class="fas fa-ring text-cyan fa-3x mb-4"></i>
-                                        <h4 class="font-weight-bold mb-4">Wedding</h4>
-                                    </div>
-                                    <div class="col-3 mb-1 mb-md-5">
-                                        <i class="fas fa-birthday-cake text-cyan fa-3x mb-4"></i>
-                                        <h4 class="font-weight-bold mb-4">Events</h4>
-                                    </div>
-                                    <div class="col-3 mb-1 mb-md-5">
-                                        <i class="fas fa-female text-cyan fa-3x mb-4"></i>
-                                        <h4 class="font-weight-bold mb-4">Portraits</h4>
-                                    </div>
-                                    <div class="col-3 mb-1 mb-md-5">
-                                        <img src="./icons/music_video_icon.svg" class="mb-3 text-cyan lozad" alt="Music Video" style="height:54px;margin-bottom: 20px !important">
-                                        <h4 class="font-weight-bold mb-4 music-video-text">Music Video</h4>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,50 +158,49 @@
     </header>
     <!--/Navigation & Intro-->
 
-    <main role="main">
-        <!-- First container -->
+<main role="main">
+    <!-- First container -->
 <div class="container">
-
+    <h1 class="text-center mb-5 mt-5 pt-4 fadeIn">
+        Videography demo reels
+    </h1>
     <!-- Section About -->
     <section id="about" class="my-5 pb-4">
 
         <div class="row fadeIn text-center" data-wow-delay="0.2s">
-            <div class="col-lg-6 mt-5 mt-md-0">
-                <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
-                        src="https://www.youtube.com/embed/9fyXNFFSuMU" title="Featuring a Musical Band Show" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                </iframe>
+            
+                <div class="col-lg-6 mt-5">
+                    <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
+                            src="https://www.youtube.com/embed/58Kv1r_g9zo" title="Featuring a musical band show &quot;7th String&quot;." frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
 
-            </div>
-            <div class="col-lg-6 mt-5 mt-md-0">
-                <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
-                        src="https://www.youtube.com/embed/_wmwX1rlAUE" title="73rd Birthday Celebration" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                </iframe>
-             
-            </div>
-        </div>
-        <!-- First row -->
-        <div class="row fadeIn text-center mt-5" data-wow-delay="0.2s">
-            <!-- Place for photo -->
-           
-            <div class="col-lg-6 mt-5 mt-md-0">
-                <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
-                        src="https://www.youtube.com/embed/47stzYCx9vo" title="Event Videography" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                </iframe>
-            </div>
-            <div class="col-lg-6 mt-5 mt-md-0">
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
+                            src="https://www.youtube.com/embed/_wmwX1rlAUE" title="73rd Birthday Celebration" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
 
-                <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
-                        src="https://www.youtube.com/embed/G5IGWcP7eS4?cc_load_policy=1" title="Stage drama"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                </iframe>
-            </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
+                            src="https://www.youtube.com/embed/7Yo5KgoRIkE" title="Performances by Dr. Sebastian Fernando&#x27;s Grandchildren at the Celebration of His Achievements." frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <iframe style="border-radius: 30px; max-width: 100%" class="lozad" width="560" height="315"
+                            src="https://www.youtube.com/embed/G5IGWcP7eS4" title="Stage drama" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+
+                </div>
         </div>
         <!-- /.First row -->
     </section>
@@ -199,20 +226,20 @@
                     </div>
                 </li>
                 <li>
-                        <input type="radio" name="select" value="tabPage15" id="imageTab4">
+                        <input type="radio" name="select" value="tabPage11" id="imageTab4">
 
                     <div class="item-hugger">
-                        <div class="title">Events</div>
-                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-15/131/thumb-Z7N_4410-Edit.jpg" alt="Events"/>
+                        <div class="title">Wedding</div>
+                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/278/thumb-DSC04897-Edit.jpg" alt="Wedding"/>
                         <label for="imageTab4"></label>
                     </div>
                 </li>
                 <li>
-                        <input type="radio" name="select" value="tabPage11" id="imageTab5">
+                        <input type="radio" name="select" value="tabPage15" id="imageTab5">
 
                     <div class="item-hugger">
-                        <div class="title">Wedding</div>
-                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/163/thumb-Z6N_4694-Edit.jpg" alt="Wedding"/>
+                        <div class="title">Events</div>
+                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-15/131/thumb-Z7N_4410-Edit.jpg" alt="Events"/>
                         <label for="imageTab5"></label>
                     </div>
                 </li>
@@ -221,7 +248,7 @@
 
                     <div class="item-hugger">
                         <div class="title">Landscapes</div>
-                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/93/thumb-Z6N_6222.jpg" alt="Landscapes"/>
+                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/301/thumb-Z6N_6222-Edit.jpg" alt="Landscapes"/>
                         <label for="imageTab6"></label>
                     </div>
                 </li>
@@ -242,19 +269,6 @@
                              src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/123/thumb-Mehrish-SunYear-RealisticSun.jpg"
                              alt="The first birthday" />
                     </a>
-                    <a
-                        data-lg-size="1280-720"
-                        data-src="//www.youtube.com/watch?v=EIUJfXk3_3w&mute=0"
-                        data-poster="https://img.youtube.com/vi/EIUJfXk3_3w/maxresdefault.jpg"
-                        data-sub-html="<h4>Puffin Hunts Fish To Feed Puffling | Blue Planet II | BBC Earth</h4><p>On the heels of Planet Earth II's record-breaking Emmy nominations, BBC America presents stunning visual soundscapes from the series' amazing habitats.</p>"
-                    >
-                        <img
-                            width="300"
-                            height="100"
-                            class="img-responsive"
-                            src="https://img.youtube.com/vi/EIUJfXk3_3w/maxresdefault.jpg"
-                        />
-                    </a>
                     <a class="gallery-item" data-src=""
                        href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/39/_DSC9315-Edit-Edit.jpg">
                         <img loading="lazy" class="img-responsive lozad"
@@ -262,9 +276,33 @@
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/177/Z7N_4428-Edit-Edit.jpg">
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/300/DSC05310.jpg">
                         <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/177/thumb-Z7N_4428-Edit-Edit.jpg"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/300/thumb-DSC05310.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/292/DSC05128-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/292/thumb-DSC05128-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/196/Z7N_7150-Edit-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/196/thumb-Z7N_7150-Edit-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/286/DSC05427.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/286/thumb-DSC05427.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/198/Z7N_7162-Edit-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/198/thumb-Z7N_7162-Edit-Edit.jpg"
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
@@ -274,9 +312,63 @@
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/282/DSC05945-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/282/thumb-DSC05945-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/201/Z6N_1066-Enhanced-NR-Edit-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/201/thumb-Z6N_1066-Enhanced-NR-Edit-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/281/DSC06132-Enhanced-NR.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/281/thumb-DSC06132-Enhanced-NR.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/199/Z7N_7153-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/199/thumb-Z7N_7153-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/291/DSC05013-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/291/thumb-DSC05013-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/280/DSC05884-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/280/thumb-DSC05884-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/279/DSC05112-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/279/thumb-DSC05112-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/299/Z6N_1295-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/299/thumb-Z6N_1295-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
                        href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/85/Z7N_2917.jpg">
                         <img loading="lazy" class="img-responsive lozad"
                              src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/85/thumb-Z7N_2917.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/197/Z7N_7171-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/197/thumb-Z7N_7171-Edit.jpg"
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
@@ -286,15 +378,9 @@
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/98/Z6N_6202-Edit-Edit.jpg">
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/290/DSC05163-Edit.jpg">
                         <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/98/thumb-Z6N_6202-Edit-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/105/11.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/105/thumb-11.jpg"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/290/thumb-DSC05163-Edit.jpg"
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
@@ -334,9 +420,9 @@
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/111/20.jpg">
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/202/Z6N_1015-Enhanced-NR-Edit.jpg">
                         <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/111/thumb-20.jpg"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/202/thumb-Z6N_1015-Enhanced-NR-Edit.jpg"
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
@@ -349,12 +435,6 @@
                        href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/114/24.jpg">
                         <img loading="lazy" class="img-responsive lozad"
                              src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/114/thumb-24.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/86/Z7N_2948-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/86/thumb-Z7N_2948-Edit.jpg"
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
@@ -376,22 +456,40 @@
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/78/_EMR0475b.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/78/thumb-_EMR0475b.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
                        href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/121/Z6N_5499-Edit.jpg">
                         <img loading="lazy" class="img-responsive lozad"
                              src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/121/thumb-Z6N_5499-Edit.jpg"
                              alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/93/Z6N_6222.jpg">
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/98/Z6N_6202-Edit-Edit.jpg">
                         <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/93/thumb-Z6N_6222.jpg"
-                             alt="Sunrise at Los Cabos, Mexico" />
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/98/thumb-Z6N_6202-Edit-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/296/Z7N_7578-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/296/thumb-Z7N_7578-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/297/Z7N_7582-Enhanced-NR-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/297/thumb-Z7N_7582-Enhanced-NR-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/298/Z6N_1289-Enhanced-NR-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-1/298/thumb-Z6N_1289-Enhanced-NR-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/301/Z6N_6222-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/301/thumb-Z6N_6222-Edit.jpg"
+                             alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
                        href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/92/Z6N_6216-Edit.jpg">
@@ -439,6 +537,450 @@
                        href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-2/43/_DSC9233.jpg">
                         <img loading="lazy" class="img-responsive lozad"
                              src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-2/43/thumb-_DSC9233.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-2/203/Z6N_6503-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-2/203/thumb-Z6N_6503-Edit.jpg"
+                             alt="" />
+                    </a>
+            </div>
+        </div>
+        <div id="tabPage11" class="tabcontent">
+            
+            <div class="gallery-container">
+              
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/278/DSC04897-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/278/thumb-DSC04897-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/274/DSC05013-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/274/thumb-DSC05013-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/270/DSC05112-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/270/thumb-DSC05112-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/275/DSC04963.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/275/thumb-DSC04963.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/277/DSC04957-Edit-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/277/thumb-DSC04957-Edit-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/273/DSC05024-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/273/thumb-DSC05024-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/271/DSC05034-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/271/thumb-DSC05034-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/269/DSC05118-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/269/thumb-DSC05118-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/268/DSC05128-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/268/thumb-DSC05128-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/267/DSC05161-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/267/thumb-DSC05161-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/265/DSC05169-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/265/thumb-DSC05169-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/264/DSC05185-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/264/thumb-DSC05185-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/263/DSC05216-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/263/thumb-DSC05216-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/262/DSC05234.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/262/thumb-DSC05234.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/261/DSC05238-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/261/thumb-DSC05238-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/260/DSC05254-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/260/thumb-DSC05254-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/258/DSC05266.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/258/thumb-DSC05266.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/257/DSC05291.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/257/thumb-DSC05291.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/256/DSC05310.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/256/thumb-DSC05310.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/255/DSC05316.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/255/thumb-DSC05316.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/254/DSC05325.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/254/thumb-DSC05325.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/253/DSC05350.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/253/thumb-DSC05350.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/252/DSC05356.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/252/thumb-DSC05356.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/251/DSC05359.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/251/thumb-DSC05359.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/250/DSC05365.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/250/thumb-DSC05365.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/249/DSC05370-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/249/thumb-DSC05370-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/248/DSC05396-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/248/thumb-DSC05396-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/247/DSC05409.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/247/thumb-DSC05409.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/246/DSC05427.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/246/thumb-DSC05427.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/245/DSC05428.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/245/thumb-DSC05428.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/244/DSC05618.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/244/thumb-DSC05618.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/243/DSC05628-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/243/thumb-DSC05628-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/242/DSC05685.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/242/thumb-DSC05685.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/241/DSC05697.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/241/thumb-DSC05697.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/240/DSC05702-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/240/thumb-DSC05702-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/239/DSC05715-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/239/thumb-DSC05715-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/238/DSC05777-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/238/thumb-DSC05777-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/237/DSC05802.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/237/thumb-DSC05802.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/236/DSC05820.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/236/thumb-DSC05820.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/235/DSC05821.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/235/thumb-DSC05821.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/234/DSC05854.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/234/thumb-DSC05854.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/233/DSC05859.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/233/thumb-DSC05859.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/232/DSC05861.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/232/thumb-DSC05861.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/231/DSC05881-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/231/thumb-DSC05881-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/230/DSC05884-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/230/thumb-DSC05884-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/229/DSC05939-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/229/thumb-DSC05939-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/228/DSC05945-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/228/thumb-DSC05945-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/227/DSC05947-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/227/thumb-DSC05947-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/226/DSC05999-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/226/thumb-DSC05999-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/223/DSC06028-Enhanced-NR.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/223/thumb-DSC06028-Enhanced-NR.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/222/DSC06050.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/222/thumb-DSC06050.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/221/DSC06058-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/221/thumb-DSC06058-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/220/DSC06067-Enhanced-NR.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/220/thumb-DSC06067-Enhanced-NR.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/219/DSC06085.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/219/thumb-DSC06085.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/218/DSC06086-Enhanced-NR-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/218/thumb-DSC06086-Enhanced-NR-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/217/DSC06129-Enhanced-NR-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/217/thumb-DSC06129-Enhanced-NR-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/216/DSC06132-Enhanced-NR.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/216/thumb-DSC06132-Enhanced-NR.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/215/DSC06143-Enhanced-NR.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/215/thumb-DSC06143-Enhanced-NR.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/214/DSC06166-Enhanced-NR.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/214/thumb-DSC06166-Enhanced-NR.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/213/DSC06236-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/213/thumb-DSC06236-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/212/DSC06240-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/212/thumb-DSC06240-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/211/DSC06247-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/211/thumb-DSC06247-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/210/DSC06300-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/210/thumb-DSC06300-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/209/DSC06337.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/209/thumb-DSC06337.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/208/DSC06346-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/208/thumb-DSC06346-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/207/DSC06382.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/207/thumb-DSC06382.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/206/DSC06406-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/206/thumb-DSC06406-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/205/DSC06465-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/205/thumb-DSC06465-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/204/DSC06524-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/204/thumb-DSC06524-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/163/Z6N_4694-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/163/thumb-Z6N_4694-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/162/Z6N_4798-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/162/thumb-Z6N_4798-Edit.jpg"
+                             alt="" />
+                    </a>
+                    <a class="gallery-item" data-src=""
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/160/Z6N_4816-Edit.jpg">
+                        <img loading="lazy" class="img-responsive lozad"
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/160/thumb-Z6N_4816-Edit.jpg"
                              alt="" />
                     </a>
             </div>
@@ -653,93 +1195,15 @@
                     </a>
             </div>
         </div>
-        <div id="tabPage11" class="tabcontent">
-            
-            <div class="gallery-container">
-              
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/163/Z6N_4694-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/163/thumb-Z6N_4694-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/195/Z6N_4357-Edit-2.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/195/thumb-Z6N_4357-Edit-2.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/162/Z6N_4798-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/162/thumb-Z6N_4798-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/161/Z6N_4803-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/161/thumb-Z6N_4803-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/160/Z6N_4816-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/160/thumb-Z6N_4816-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/158/Z6N_4991-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/158/thumb-Z6N_4991-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/83/Z6N_4428-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/83/thumb-Z6N_4428-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/72/Z6N_4778.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/72/thumb-Z6N_4778.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/77/Z6N_4120.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/77/thumb-Z6N_4120.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/74/Z6N_4516.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/74/thumb-Z6N_4516.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/81/Z6N_4970-Edit-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/81/thumb-Z6N_4970-Edit-Edit.jpg"
-                             alt="" />
-                    </a>
-                    <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/47/Z6N_3902-Edit-Edit.jpg">
-                        <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/47/thumb-Z6N_3902-Edit-Edit.jpg"
-                             alt="" />
-                    </a>
-            </div>
-        </div>
         <div id="tabPage9" class="tabcontent">
             
             <div class="gallery-container">
               
                     <a class="gallery-item" data-src=""
-                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/93/Z6N_6222.jpg">
+                       href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/301/Z6N_6222-Edit.jpg">
                         <img loading="lazy" class="img-responsive lozad"
-                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/93/thumb-Z6N_6222.jpg"
-                             alt="Sunrise at Los Cabos, Mexico" />
+                             src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/301/thumb-Z6N_6222-Edit.jpg"
+                             alt="" />
                     </a>
                     <a class="gallery-item" data-src=""
                        href="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/92/Z6N_6216-Edit.jpg">
@@ -786,20 +1250,20 @@
                     </div>
                 </li>
                 <li>
+                        <input type="radio" name="bottom-select" value="tabPage11">
+
+                    <div class="item-hugger">
+                        <div class="title">Wedding</div>
+                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/278/thumb-DSC04897-Edit.jpg" alt="Wedding" />
+                        <label for="imageTab4"></label>
+                    </div>
+                </li>
+                <li>
                         <input type="radio" name="bottom-select" value="tabPage15">
 
                     <div class="item-hugger">
                         <div class="title">Events</div>
                         <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-15/131/thumb-Z7N_4410-Edit.jpg" alt="Events" />
-                        <label for="imageTab4"></label>
-                    </div>
-                </li>
-                <li>
-                        <input type="radio" name="bottom-select" value="tabPage11">
-
-                    <div class="item-hugger">
-                        <div class="title">Wedding</div>
-                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-11/163/thumb-Z6N_4694-Edit.jpg" alt="Wedding" />
                         <label for="imageTab5"></label>
                     </div>
                 </li>
@@ -808,7 +1272,7 @@
 
                     <div class="item-hugger">
                         <div class="title">Landscapes</div>
-                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/93/thumb-Z6N_6222.jpg" alt="Landscapes" />
+                        <img class="thumb-image lozad" src="https://spicyvisionstorage.blob.core.windows.net/publicshowcase/portfolio/cat-9/301/thumb-Z6N_6222-Edit.jpg" alt="Landscapes" />
                         <label for="imageTab6"></label>
                     </div>
                 </li>
@@ -819,61 +1283,58 @@
 
 <!-- /.Third section -->
 <!-- Contact -->
-<section id="contact" class="mb-4 container">
-    <!--Section heading-->
-    <h1 class="text-center mb-5 mt-5 pt-4 fadeIn">Contact me</h1>
 
-    <p class="text-center w-responsive mx-auto mb-5 fadeIn" data-wow-delay="0.2s">Please feel free to contact me to book an appointment or discuss your photography or videography need.</p>
 
-    <div class="row fadeIn text-center" data-wow-delay="0.4s">
-        <div class="col-md">
-            <i class="fas fa-map-marker-alt fa-2x"></i>
-            <address>
-                <br />
-                Oshawa (Durham Region), Ontario<br />
-                L1R 1Z8, Canada
-            </address>
+    <!--/Streak-->
+    <section id="contact" class="mb-4 container">
+        <!--Section heading-->
+        <h1 class="text-center mb-5 mt-5 pt-4 fadeIn">Contact Me</h1>
+ 
+        <div class="row fadeIn text-center" data-wow-delay="0.4s">
+            <div class="col-md">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <address>
+                    <br />
+                    Oshawa (Durham Region), Ontario<br />
+                    L1R 1Z8, Canada
+                </address>
+            </div>
+            <div class="col-md">
+                <i class="fas fa-phone fa-2x"></i>
+                <p>
+                    <br>
+                    <a class="text-decoration-none" href="tel:&amp;#43; &amp;#49; &amp;#40;&amp;#54;&amp;#52;&amp;#55;&amp;#41; &amp;#52;&amp;#53;&amp;#51; &amp;#45; &amp;#50;&amp;#51;&amp;#48;&amp;#51;">&#43; &#49; &#40;&#54;&#52;&#55;&#41; &#52;&#53;&#51; &#45; &#50;&#51;&#48;&#51;</a>
+                </p>
+            </div>
+            <div class="col-md">
+                <i class="fas fa-envelope fa-2x"></i>
+                <p>
+                    <br>
+                    <a class="text-decoration-none" href="mailto:&#101;&#109;&#114;&#97;&#110;&#46;&#115;&#112;&#105;&#99;&#121;&#118;&#105;&#115;&#105;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#101;&#109;&#114;&#97;&#110;&#46;&#115;&#112;&#105;&#99;&#121;&#118;&#105;&#115;&#105;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+                </p>
+            </div>
+            <!--.Second column-->
         </div>
-        <div class="col-md">
-            <i class="fas fa-phone fa-2x"></i>
-            <p>
-                <br>
-                <a class="text-decoration-none" href="tel:&amp;#43; &amp;#49; &amp;#40;&amp;#54;&amp;#52;&amp;#55;&amp;#41; &amp;#52;&amp;#53;&amp;#51; &amp;#45; &amp;#50;&amp;#51;&amp;#48;&amp;#51;">&#43; &#49; &#40;&#54;&#52;&#55;&#41; &#52;&#53;&#51; &#45; &#50;&#51;&#48;&#51;</a>
-            </p>
+    </section>
+    <!--Streak-->
+    <div class="container-fluid py-5" style="background: #b1bace;">
+        <div class="d-flex align-items-center justify-content-center">
+            <ul class="list-unstyled">
+                <li>
+                    <h2 class="text-white mt-4 fadeIn text-center h2-responsive" data-wow-delay="0.2s h2-responsive">
+                        <i class="fas fa-quote-left" aria-hidden="true"></i> With a personalized touch, I am dedicated to bringing your vision to life.<i class="fas fa-quote-right" aria-hidden="true"></i>
+                    </h2>
+                </li>
+            </ul>
         </div>
-        <div class="col-md">
-            <i class="fas fa-envelope fa-2x"></i>
-            <p>
-                <br>
-                <a class="text-decoration-none" href="mailto:&#101;&#109;&#114;&#97;&#110;&#46;&#115;&#112;&#105;&#99;&#121;&#118;&#105;&#115;&#105;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#101;&#109;&#114;&#97;&#110;&#46;&#115;&#112;&#105;&#99;&#121;&#118;&#105;&#115;&#105;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
-            </p>
-        </div>
-        <!--.Second column-->
     </div>
-</section>
-
-<!--Streak-->
-<div class="container-fluid py-5" style="background: #b1bace;">
-    <div class="d-flex align-items-center justify-content-center">
-        <ul class="list-unstyled">
-            <li>
-                <h2 class="text-white mt-4 fadeIn text-center h2-responsive" data-wow-delay="0.2s h2-responsive">
-                    <i class="fas fa-quote-left" aria-hidden="true"></i> With a personalized touch, I am dedicated to bringing your vision to life.<i class="fas fa-quote-right" aria-hidden="true"></i>
-                </h2>
-            </li>
-        </ul>
-    </div>
-</div>
-<!--/Streak-->
-
 
     </main>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/lightgallery.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lg-video@1.3.0/dist/lg-video.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lg-autoplay@1.3.0/dist/lg-autoplay.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/plugins/thumbnail/lg-thumbnail.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0/plugins/zoom/lg-zoom.umd.js"></script>
